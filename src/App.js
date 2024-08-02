@@ -1,25 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import NavBar from './components/NavBar';
+import TripDetails from './components/TripDetails';
+import Filters from './components/Filters';
+import PopUp from './components/PopUp';
+import TripTypes from './components/TripTypes';
+import Footer from './components/Footer';
+
+
+const App = () => (
+  <div className="App">
+    <NavBar />
+    <TripTypes/>
+    <TripDetails />
+    <Filters />
+    <PopUp />
+    <Footer/>
+
+  </div>
+);
 
 export default App;

@@ -1,38 +1,1107 @@
 .App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ;
+  padding: 5px 45px;
+  background-color: #fefdfd;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(36, 28, 70);
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #1a1355;
+  font-weight: 600;
+}
+
+.auth-buttons {
+  display: flex;
+}
+
+.auth-buttons button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.auth-buttons .sign-in:hover {
+  background-color: #ddd;
+}
+
+.auth-buttons .sign-up {
+  background-color: #151b61;
+  color: #fff;
+}
+
+.auth-buttons .sign-up:hover {
+  background-color: #0056b3;
+}
+
+.trip-radio {
+  display: flex;
+  flex-direction: row;
+}
+
+.trip-details {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fffdfd;
+  border-radius: 5px;
+  width: inherit;
+  box-shadow: 2px 2px 2px rgb(162, 165, 173);
+  max-width: 90% !important;
+  align-items: baseline;
+}
+
+.trip-details-container label {
+  scale: 80%;
+
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  column-gap: -10px;
+}
+
+.trip-radio {
+  display: flex;
+  justify-content: start;
+  margin-top: 12px;
+}
+
+.trip-radio div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.trip-radio label {
+  display: flex;
+  align-items: center;
+}
+
+.trip-radio p {
+  margin-left: 5px;
+}
+
+.trip-details-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.trip-details-container input,
+.trip-details-container select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon input {
+  padding-left: 35px;
+  height: 50px;
+}
+
+.input-with-icon .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.flight-button {
+  margin-left: 230px;
+
+}
+
+.flight-button button {
+  height: 50px;
+  background-color: #081174;
+  color: white;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.flight-button button:hover {
+  background-color: #01052d;
+}
+
+.airlines {
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.airlines :nth-child(2) {
+  margin-left: -2px;
+}
+
+.airlines :nth-child(3) {
+  margin-left: 20px;
+
+}
+
+.airline :nth-child(4) {
+  align-items: end;
+}
+
+
+.airline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.airline button {
+  height: 20px;
+}
+
+.div-stop {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-stop-category {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 500px;
+}
+
+body {
+  background: #e8e8e8;
+  -webkit-font-smoothing: antialiased;
+}
+
+sup {
+  font-size: 80%;
+  vertical-align: top;
+  position: relative;
+  top: 1px;
+}
+
+.wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slider-wrapper {
+  width: 500px;
+  display: inline-block;
+  position: relative;
+  font-family: arial;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.horizontal-slider {
+  background: #020202;
+  border: 1px solid #070707;
+  height: 20px;
+  position: relative;
+  border-radius: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.track {
+  background: #9c9e9f;
+  height: 20px;
+  position: absolute;
+  border-top: 1px solid #9c9e9f;
+  border-bottom: 1px solid #9c9e9f;
+  transform: translateY(-1px);
+}
+
+.track:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+.thumb {
+  background: #555;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+  z-index: 10;
+  background: linear-gradient(#555, #454545);
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  box-shadow: inset -2px -2px 6px 2px rgba(0, 0, 0, 0.1);
+  transition: width 0.1s;
+}
+
+.thumb:focus {
+  outline: none;
+}
+
+.thumb:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.range-wrapper {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.range {
+  background: #fff;
+  white-space: nowrap;
+  border: 1px solid #d2d2d2;
+  border-radius: 2px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: #555;
+  width: 150px;
+  z-index: 10;
+  position: relative;
+}
+
+.range:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 67px solid transparent;
+  border-right: 67px solid transparent;
+  border-top: 6px solid #d2d2d2;
+}
+
+.range-value {
+  width: 74px;
+  padding: 8px 0;
+  text-align: center;
+  display: inline-block;
+  transition: background 0.1s;
+}
+
+.range-divider {
+  width: 1px;
+  display: inline-block;
+}
+
+.range-divider:after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: #d2d2d2;
+  content: '';
+}
+
+.range-alert {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #fff;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border: 1px solid #d2d2d2;
+  color: #0e0e0e;
+  line-height: 15px;
+  transition: right 0.2s;
+}
+
+.range-alert.active {
+  right: -15px;
+}
+
+.marker {
+  position: absolute;
+  top: 100%;
+  padding-top: 16px;
+  font-size: 13px;
+  color: #555;
+  letter-spacing: 0.05em;
+  transform: translateX(-50%);
+}
+
+.marker:after {
+  content: '';
+  width: 1px;
+  height: 8px;
+  background: #d2d2d2;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.marker-0:after {
+  display: none;
+}
+
+.marker-25 {
+  left: 25%;
+}
+
+.marker-50 {
+  left: 50%;
+}
+
+.marker-75 {
+  left: 75%;
+}
+
+.departure {
+  display: flex;
+  flex-direction: column;
+}
+
+.day-night {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+}
+
+.arrival {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+}
+
+.day-night button {
+  background-color: #a5f2fe;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.arrival button {
+  background-color: #a5f2fe;
+  border: 1px solid gray;
+  border-radius: 5px;
+
+}
+
+.filters-aside {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-left: 20px;
+  box-shadow: 2px 2px 2px rgb(162, 165, 173);
+
+}
+
+.filters-aside h3 {
+  color: #082F73;
+}
+
+.filters h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.filters p {
+  margin: 5px 0 20px;
+  color: #555;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.airline button {
+  background-color: #223A60;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-left: 50px;
+  height: 30px;
+}
+
+.airline button:hover {
+  background-color: #1f56af;
+}
+
+.flight-container {
+  margin-bottom: 20px;
+
+}
+
+.airlines {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+
+}
+
+.airlines img,
+p {
+  margin-left: 50px;
+}
+
+.airlines img {
+  border-radius: 50%;
+}
+
+.div-stop button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.div-stop button:hover {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+.price-range,
+.onward-duration {
+  margin-bottom: 20px;
+  margin-left: -80px;
+  scale: 60%;
+
+}
+
+.price-range h3 {
+  scale: 100%;
+}
+
+.departure button {
+  background-color: #223A60;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.departure button:hover {
+  background-color: #223A60;
+}
+
+.day-night,
+.arrival {
+  display: flex;
+  gap: 10px;
+}
+
+.baggage button {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.bag-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.baggage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.baggage-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.baggage-button :nth-child(2) {
+  border-style: none;
+}
+
+.connections input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.label-container {
+  display: flex;
+  flex-direction: row;
+  scale: 80%;
+  gap: 150px;
+  margin-left: -200px;
+}
+
+.label-container :nth-child(3) {
+  margin-left: 80px;
+}
+
+.label-container :nth-child(4) {
+  margin-left: -88px;
+}
+
+.label-container :nth-child(5) {
+  margin-left: -70px;
+}
+
+.label-container :nth-child(6) {
+  margin-left: 15px;
+}
+
+.for-days {
+  display: flex;
+  flex-direction: column;
+}
+
+.for {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.days {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.days button {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(173, 224, 244);
+  border-style: none;
+}
+
+.for :nth-child(1) {
+  background-color: rgb(189, 231, 248);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.for :nth-child(2) {
+  border-style: none;
+  background-color: transparent;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head h2,
+h3 {
+  color: #082F73;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(214, 246, 251);
+  margin-left: 50px;
+  width: 80%;
+  max-width: 900px;
+  border-radius: 5px;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.end {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  margin-left: -20px;
+
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.middle :nth-child(2) {
+  color: orangered;
+}
+
+.middle :nth-child(3) {
+  color: blue;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer button {
+  background-image: linear-gradient(to right, green, rgb(157, 157, 250));
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-style: none;
+  border-radius: 20px;
+  margin-left: 25px;
+}
+
+.body {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.booking-details {
+  height: 480px;
+  background: white;
+  scale: 80%;
+  max-width: 1350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgb(162, 165, 173);
+
+
+}
+
+.booking button {
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: #223A60;
+  color: white;
+}
+
+.booking button:hover {
+  background-color: #081174;
+
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  scale: 80%;
+  max-width: 1400px;
+  border-radius: 5px;
+  margin-top: 12px;
+  box-shadow: 2px 2px 2px gray;
+
+
+}
+
+.date p {
+  scale: 90%;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.vl {
+  height: 105px;
+  width: 1px;
+  background-color: rgb(181, 176, 176);
+}
+
+.date :nth-child(2) {
+  color: rgb(6, 248, 95);
+}
+
+.date-carousel-2 :nth-child(2) {
+  color: skyblue;
+
+}
+
+.date-carousel {
+  display: flex;
+  flex-direction: column;
+  margin-left: -10px;
+}
+
+.specifications {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: white;
+  max-width: 1350px;
+  scale: 80%;
+  height: 100px;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgb(162, 165, 173);
+
+}
+
+.specifications button {
+  height: 70px;
+  width: 220px;
+  background-color: #223A60;
+  color: white;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  column-gap: -10px;
+
+}
+
+.specifications button:hover {
+  background-color: #081174;
+
+}
+
+.specifications :nth-child(4):hover {
+  background-color: #0cac44;
+
+}
+
+.specifications :nth-child(4) {
+  background-color: #369F5A;
+  color: white;
+
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+
+}
+.home{
+  max-width: 1100px;
+  width: 100%;
+}
+
+.flight-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #333;
+}
+
+.input-group input,
+.input-group select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button.find-flight {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button.find-flight:hover {
+  background-color: #142c6e;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  scale: 68%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.rout-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.rout-details button {
+  background-color: #223A60;
+  color: white;
+  height: 40px;
+  width: 90px;
+  border-style: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-left: 10px;
+}
+
+.rout-details p {
+  scale: 80%;
+}
+
+.popup-header {
+  background-color: rgb(154, 222, 249);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ticket-details {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.second {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.rout-details button:hover {
+  background-color: #081174;
+}
+
+.popup-header button {
+  font-size: 40px;
+  color: rgb(46, 43, 43);
+  text-align: center;
+
+
+}
+
+.footer-container {
+  width: 100%;
+  height: 100%;
+  background-color: #082F73;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.subscribe-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subscribe-container button {
+  height: 30px;
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: blue;
+}
+
+.subscribe-container input {
+  height: 30px;
+  width: 300px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.div-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.connection-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
+}
+
+.connection-content p {
+  margin-left: -3px;
+}
+
+.duration {
+  scale: 70%;
+  margin-left: -40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 30px;
+
+}
+
+.duration-2 {
+  margin-top: 20px;
+}
+
+.App {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
