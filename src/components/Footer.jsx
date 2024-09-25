@@ -18,6 +18,9 @@ const Footer = () => (
                 <div className="div-2">  <p style={{ fontWeight: 'bold' }}>Policies</p> <p>Privacy</p> <p>Terms of Use</p> <p>Accessibility</p>  <p>Cookies</p></div>
                 <div className="div-3">  <p style={{ fontWeight: 'bold' }}>Help</p> <p>Support</p> <p>Cancel your booking</p> <p>Refund policies</p> <p>Use a coupon</p> <p>Travel documents</p></div>
                 <div className="div-4">  <p style={{ fontWeight: 'bold' }}>More</p><p>Airline fees</p><p>Airlines</p><p>Low fare trips</p><p>Badges & Certificates</p><p>Advertising</p></div>
+            
+            <div>l</div>
+            
             </div>
 
 

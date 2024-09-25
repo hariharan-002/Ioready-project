@@ -12,7 +12,6 @@ import PopUp from './PopUp';
 const Home = () => {
     const [open, setOpen] = useState(false)
     const handleClick = (e) => {
-        console.log(open)
         setOpen(true)
     }
     const handleClose = () => {
